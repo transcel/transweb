@@ -31,7 +31,7 @@ body{
 
 
 #main > .container-fluid {
-	background-color: rgba(0,0,0, .1);
+	background-color: #fff;
 	padding: 15px 0;
 }
 
@@ -64,4 +64,8 @@ menulevel-sign-in{
 	float: right;
 	line-height: 2.5em;
 	display: inline;
+}
+
+div#this-carousel-id.carousel.slide{
+	border-top:5px solid rgba(0,0,0, 0.1)
 }
