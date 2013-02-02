@@ -1,0 +1,67 @@
+/* CSS Document */
+
+body{
+	border-top: 7px solid #bfbfbf;
+	padding-top: 15px;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #222;
+	font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+	font-weight: normal;
+}
+
+
+#header > .container-fluid,
+#nav > .container-fluid,
+#main > .container-fluid,
+#footer > .container-fluid {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #FFF;
+}
+
+#header > .container-fluid {
+	background-color: #FFF;
+	padding: 15px 0px;
+	width: 100%;
+}
+
+
+#main > .container-fluid {
+	background-color: rgba(0,0,0, .1);
+	padding: 15px 0;
+}
+
+
+
+.padd-left10 {
+	padding-left: 10px;
+}
+
+ul.nav li {
+	float: left;
+	padding-right: 25px;
+}
+
+ul.nav li a{
+	color: #222;
+}
+
+ul.nav li a:hover{
+	background:none;
+	color:#039;
+}
+
+li.last{
+	float:right;
+}
+
+
+menulevel-sign-in{
+	float: right;
+	line-height: 2.5em;
+	display: inline;
+}
