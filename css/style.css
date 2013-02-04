@@ -16,7 +16,7 @@ body{
 #nav > .container-fluid,
 #main > .container-fluid,
 #footer > .container-fluid {
-	width: 90%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -28,6 +28,19 @@ body{
 	background-color: #FFF;
 	padding: 15px 0px;
 	width: 100%;
+}
+
+#featured .item {
+   
+}
+
+#featured .item-inner {
+    height: 590px;
+    display: block;
+}
+
+#featured #this-carousel-id {
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 
@@ -65,10 +78,6 @@ menulevel-sign-in{
 	float: right;
 	line-height: 2.5em;
 	display: inline;
-}
-
-div#this-carousel-id.carousel.slide{
-	border-top:5px solid rgba(0,0,0, 0.1)
 }
 
 
