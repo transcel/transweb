@@ -24,12 +24,12 @@
                             <img src="img/logo.jpg"/>
                         </a>
                     </div>
-                    <div class="span8" style="margin-top: -7px;">
-                        <form class="form-search" style="display: block;">
-                            <div class="input-append pull-right" style="margin-top: 30px;">
-                                <input type="text" placeholder="Search the site..." style="border-right: none; box-shadow: none; border-radius: 0px; width: 350px;">
-                                <button type="submit" class="btn" style="background:none; border-left:none; border-radius:0; box-shadow: none; overflow:hidden">
-                                    <i class="icon-search" style="padding: 0; margin: 0; overflow: hidden;"></i>
+                    <div class="span8" >
+                        <form class="form-search" >
+                            <div class="input-append pull-right">
+                                <input type="text" placeholder="Search the site...">
+                                <button type="submit" class="btn">
+                                    <i id="searchbtn" class="icon-search"></i>
                                 </button>                              
                             </div>
                         </form>
@@ -38,14 +38,14 @@
             </div>
         </header>
         
-        <nav id="nav" style="display: block;">
-            <div class="navbar-inner container-fluid" style="background: none; border: none;box-shadow:none; margin-top:10px;">
+        <nav id="nav" >
+            <div class="navbar-inner container-fluid">
                 <span class="menulevel-sign-in">
                     <span class="sign-in-link pull-right">  
                         <a href="#">Sign into your account</a>
                     </span>
                 </span>
-                <ul class="nav span12" style="margin-top:-22px;">
+                <ul class="nav span12">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Community</a></li>
                     <li><a href="#">Products</a></li>
@@ -54,7 +54,7 @@
                 </ul>
             </div>
         </nav>
-        <section id="featured">
+        <div id="featured">
             <div id="this-carousel-id" class="carousel slide" data-interval="50000" data-pause="hover"><!-- class of slide for animation -->
                 <div class="carousel-inner">
                     <div class="item active"><!-- class of active since it's the first item -->
@@ -68,11 +68,13 @@
                                         <input type="text" class="input-long" placeholder="Phone Number" id="rnumber" />
                                     </div>
                                 </div>
+
                                 <div class="control-group">
                                     <div class="controls">
                                         <input type="text" class="input-long" placeholder="Email Address" id="raccount" />
                                     </div>
                                 </div>
+
                                 <div class="control-group">
                                     <div class="controls">
                                         <input class="input-medium" placeholder="Password" type="password" />
@@ -97,38 +99,38 @@
                 </div><!-- /.carousel-inner -->
                 <!--  Next and Previous controls below
                     href values must reference the id for this carousel -->
-                <a style="line-height: 35px; font-size: 75px; width: 55px; height: 55px; border-radius: 55px;" class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-                <a style="line-height: 35px; font-size: 75px; width: 55px; height: 55px; border-radius: 55px;" class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
             </div><!-- /.carousel -->
-        </section>
+        </div>
         
         <div id="main">
             <div class="container-fluid">
                 
-                <div class="row-fluid" style="width: 90%; margin: 0 auto; line-height: 3; padding-bottom: 50px;">
-                    <div class="span4" style="border-top: 6px solid black; text-align:center;">
+                <div class="row-fluid" id="content_container">
+                    <div class="span4 content">
                         <strong>DBJ PILOT PROJECT - M3</strong>
                         <div class="row-fluid">
-                            <div class="span4" style="background:grey">
-                                <img src="http://placehold.it/135x134"/>
-                            </div>
-                            <div class="span8" style="background:grey">
+                            <div class="span12" style="background:grey">
                                 <img src="http://placehold.it/280x150"/>
                             </div>
                         </div>                        
                     </div> 
-                    <div class="span4" style="border-top: 6px solid black; text-align:center;">
+                    <div class="span4 content">
                         <strong>LATEST NEWS</strong>
                         <div class="row-fluid">
                             <div class="span4" style="background:grey">
                                 <img src="http://placehold.it/135x134"/>
                             </div>
-                            <div class="span8" style="background:grey">
-                                <img src="http://placehold.it/280x150"/>
+                            <div class="span8">
+                                <a href="#">
+                                    <h5 style="text-align: left;color: rgb(116, 116, 116); line-height:1.5">Regulatory Imperatives in Mobile Microfinance</h5>
+                                </a>
+                               <p style="text-align: left; font-size: 70%; line-height: 1.5;"><em>Published by</em>&nbsp; Hugo Daley -Transcel Limited, 2010 - <strong>10 August 2012</strong></p>
                             </div>
                         </div>                                         
                     </div>   
-                    <div class="span4" style="border-top: 6px solid black; text-align:center;">
+                    <div class="span4 content">
                         <strong>STRATEGIC PARTNERS</strong>
                         <div class="row-fluid">
                             <div class="span6" style="background:grey">
@@ -152,14 +154,22 @@
         </div>
         
         
-        <footer id="footer" style="border-top: 1px solid rgba(126, 126, 126, 0.5);width: 90%;margin: 0px auto; border-bottom: 1px solid rgba(126, 126, 126, 0.5);">
-            <nav id="nav" style="display: block; padding-top: 15px;">
+        <footer id="footer" >
+            <!--<div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <ul style="margin-top:-32px; display: inline;">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="last"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+            <!--<nav id="nav" style="display: block; padding-top: 15px;">
                 <div class="navbar-inner container-fluid" style="background: none;margin-left: -12px; border: none;box-shadow:none; padding:0px;width:100% ">
-                    <span class="menulevel-sign-in">
-                        <span class="sign-in-link pull-right">  
-                            <p class="copyright">© 2012 Transcel Global Transactions. All rights reserved.</p>
-                        </span>
-                    </span>
                     <ul class="nav span12" style="margin-top:-32px;">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Community</a></li>
@@ -167,8 +177,14 @@
                         <li><a href="#">Contact Us</a></li>
                         <li class="last"><a href="#"></a></li>
                     </ul>
+                    <span class="menulevel-sign-in">
+                        <span class="sign-in-link pull-right">  
+                            <p class="copyright">© 2012 Transcel Global Transactions. All rights reserved.</p>
+                        </span>
+                    </span>
                 </div>
-            </nav>
+            </nav>-->
+
         </footer>
     </body>
 </html>
