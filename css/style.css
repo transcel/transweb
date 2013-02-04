@@ -30,17 +30,17 @@ body{
 	width: 100%;
 }
 
-#featured #form-on-img {
+#featured .form-on-img {
     position: absolute; 
     bottom: 80px; 
     left: 10%;
 }
 
-#featured #form-on-img .input-long {
+#featured .form-on-img .input-long {
     width: 320px;
 }
 
-#featured #form-on-img .btn-long {
+#featured .form-on-img .btn-long {
     width: 330px;
     height: 35px;
 }
