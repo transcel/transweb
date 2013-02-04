@@ -9,30 +9,30 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
                 
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
     </head>
 
     <body>
-    	<header id="header">
-        	<div class="container-fluid">
+        <header id="header">
+            <div class="container-fluid">
                 <div class="row-fluid">
-                	<div class="span4">
-                	    <a href="#">
-                	        <img src="img/logo.jpg"/>
-                	    </a>
+                    <div class="span4">
+                        <a href="#">
+                            <img src="img/logo.jpg"/>
+                        </a>
                     </div>
                     <div class="span8" style="margin-top: -7px;">
-                   		 <form class="form-search" style="display: block;">
-                          <div class="input-append pull-right" style="margin-top: 30px;">
-                            <input type="text" placeholder="Search the site..." style="border-right: none; box-shadow: none; border-radius: 0px; width: 350px;">
-                            <button type="submit" class="btn" style="background:none; border-left:none; border-radius:0; box-shadow: none; overflow:hidden">
-                            	<i class="icon-search" style="padding: 0; margin: 0; overflow: hidden;"></i>
-                            </button>                              
-                          </div>
-                          </form>
+                        <form class="form-search" style="display: block;">
+                            <div class="input-append pull-right" style="margin-top: 30px;">
+                                <input type="text" placeholder="Search the site..." style="border-right: none; box-shadow: none; border-radius: 0px; width: 350px;">
+                                <button type="submit" class="btn" style="background:none; border-left:none; border-radius:0; box-shadow: none; overflow:hidden">
+                                    <i class="icon-search" style="padding: 0; margin: 0; overflow: hidden;"></i>
+                                </button>                              
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -58,19 +58,19 @@
             <div id="this-carousel-id" class="carousel slide" data-interval="50000" data-pause="hover"><!-- class of slide for animation -->
                 <div class="carousel-inner">
                     <div class="item active"><!-- class of active since it's the first item -->
-                        <div class="item-inner" style="width: 100%; position: relative; background-color: rgba(0,0,0,.1);">
+                        <div class="item-inner">
                             
                             <img id="img-first" src="http://placehold.it/1200x480" alt="" style="width:100%;" />
 
-                            <form action="#" method="POST" style="position: absolute; bottom: 80px; left: 10%; z-index: 9999;">
+                            <form action="#" method="POST" id="form-on-img">
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input type="text" style="width: 320px;" placeholder="Phone Number" id="rnumber" />
+                                        <input type="text" class="input-long" placeholder="Phone Number" id="rnumber" />
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input type="text" style="width: 320px;" placeholder="Email Address" id="raccount" />
+                                        <input type="text" class="input-long" placeholder="Email Address" id="raccount" />
                                     </div>
                                 </div>
                                 <div class="control-group">
@@ -82,24 +82,23 @@
 
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input type="submit" value="Send My Confirmation Code" style="height: 35px; width: 330px;" class="btn btn-primary" />
+                                        <input type="submit" value="Send My Confirmation Code" class="btn-long btn btn-primary" />
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-
+                    
                     <div class="item">
-                        <div class="item-inner" style="width: 100%; background-color: rgba(0,0,0,.1);">
-                            <!--<img src="http://placehold.it/1200x480" alt="" style="width:100%;"/>-->
-                            Second Item
+                        <div class="item-inner">
+                            <img src="http://placehold.it/1200x480" alt="" style="width:100%;"/>
                         </div>
                     </div>
                 </div><!-- /.carousel-inner -->
                 <!--  Next and Previous controls below
                     href values must reference the id for this carousel -->
-                <a style="line-height: 25px; " class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-                <a style="line-height: 25px !important;" class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                <a style="line-height: 35px; font-size: 75px; width: 55px; height: 55px; border-radius: 55px;" class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+                <a style="line-height: 35px; font-size: 75px; width: 55px; height: 55px; border-radius: 55px;" class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
             </div><!-- /.carousel -->
         </section>
         
@@ -155,10 +154,6 @@
         
         
         <footer id="footer" style="border-top: 1px solid rgba(126, 126, 126, 0.5);width: 90%;margin: 0px auto; border-bottom: 1px solid rgba(126, 126, 126, 0.5);">
-            <!--        	<div class="container-fluid">
-                        	    <div class="row-fluid">
-                        	    </div>
-                        	</div>-->
             <nav id="nav" style="display: block; padding-top: 15px;">
                 <div class="navbar-inner container-fluid" style="background: none;margin-left: -12px; border: none;box-shadow:none; padding:0px;width:100% ">
                     <span class="menulevel-sign-in">
@@ -174,20 +169,7 @@
                         <li class="last"><a href="#"></a></li>
                     </ul>
                 </div>
-
-                <!--<div class="container-fluid">
-                        <div class="row-fluid">
-                            <ul class="nav">
-                                <li class="active">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                            </ul>
-                        </div>
-                    </div>-->
             </nav>
-        
         </footer>
     </body>
 </html>

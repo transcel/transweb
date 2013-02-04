@@ -30,17 +30,33 @@ body{
 	width: 100%;
 }
 
-#featured .item {
-   
+#featured #form-on-img {
+    position: absolute; 
+    bottom: 80px; 
+    left: 10%;
 }
+
+#featured #form-on-img .input-long {
+    width: 320px;
+}
+
+#featured #form-on-img .btn-long {
+    width: 330px;
+    height: 35px;
+}
+
 
 #featured .item-inner {
     height: 590px;
     display: block;
+    width: 100%; 
+    position: relative; 
+    background-color: rgba(0,0,0,.1);
 }
 
 #featured #this-carousel-id {
     border-top: 5px solid rgba(0, 0, 0, 0.1);
+    line-height: 25px !important;
 }
 
 
